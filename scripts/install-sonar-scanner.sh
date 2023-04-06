@@ -21,8 +21,8 @@ fi
 sudo mv sonar-scanner-4.8.0.2856-linux /var/opt
 
 # wsl -d docker-desktop/sudo sysctl -w vm.max_map_count=262144
-# chmod 755 script/install-sonar-scanner.sh
-# ./script/install-sonar-scanner.sh
+# chmod 755 scripts/install-sonar-scanner.sh
+# ./scripts/install-sonar-scanner.sh
 # cd vgel
 # /var/opt/sonar-scanner-4.8.0.2856-linux/
 # cd ..

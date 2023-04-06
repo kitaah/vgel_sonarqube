@@ -14,8 +14,7 @@ ps: ## Show containers
 	@docker-compose ps
 build: ## Build all containers
 	@docker-compose-build
-##  Builds, (re)creates, and starts containers
-up:
+up: ##  Builds, (re)creates, and starts containers
 	@docker-compose up
 start: ## Start all containers
 	@docker-compose up
@@ -59,4 +58,4 @@ sonar-scan: ## Run SonarScanner last version
 		-Dsonar.sources=. \
 		-Dsonar.sourceEncoding=utf-8 \
 		-Dsonar.host.url=http://127.0.0.1:9000 \
-		-Dsonar.login=sqp_62270620039b36e4311e1eeb1fd571c6839e08a5
+		-Dsonar.login=sqp_3813d01c9a0f11e604d622811cc15f8451fb2fa2

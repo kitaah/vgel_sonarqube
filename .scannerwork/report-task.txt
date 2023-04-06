@@ -2,5 +2,5 @@ projectKey=vgel
 serverUrl=http://127.0.0.1:9000
 serverVersion=9.9.0.65466
 dashboardUrl=http://127.0.0.1:9000/dashboard?id=vgel
-ceTaskId=AYc-vFoxbKMiiJXh6QQC
-ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=AYc-vFoxbKMiiJXh6QQC
+ceTaskId=AYdL3gMXW7yi3pSXlMKM
+ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=AYdL3gMXW7yi3pSXlMKM
