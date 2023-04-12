@@ -57,5 +57,6 @@ sonar-scan: ## Run SonarScanner last version
 		-Dsonar.projectKey=vgel \
 		-Dsonar.sources=. \
 		-Dsonar.sourceEncoding=utf-8 \
-		-Dsonar.host.url=http://127.0.0.1:9000 \
-		-Dsonar.login=sqp_3813d01c9a0f11e604d622811cc15f8451fb2fa2
+		-Dsonar.host.url=http://localhost:9000 \
+		-Dsonar.login=sqp_a7e04af8e31483801502c77884e452a4ff1ce260 \
+		-Dsonar.exclusions=vgel/node_modules/**,vgel/public/bootstrap/**/*.css,vgel/public/css/**/*.css,vgel/public/css/**/*.less

@@ -9,9 +9,9 @@ services:
       - "9000:9000"
       - "9092:9092"
     environment:
-      - SONARQUBE_JDBC_USERNAME=sonar
-      - SONARQUBE_JDBC_PASSWORD=sonarpass
-      - SONARQUBE_JDBC_URL=jdbc:postgresql://db:5432/sonar
+      - SONARQUBE_JDBC_USERNAME=${SONARQUBE_JDBC_USERNAME}
+      - SONARQUBE_JDBC_PASSWORD=${SONARQUBE_JDBC_PASSWORD}
+      - SONARQUBE_JDBC_URL=${SONARQUBE_JDBC_URL}
     depends_on:
       - db
     networks:
@@ -28,9 +28,9 @@ services:
     container_name: postgres-database
     restart: always
     environment:
-      - POSTGRES_USER=sonar
-      - POSTGRES_PASSWORD=sonar
-      - POSTGRES_DB=sonarpass
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
     volumes:
       - postgres_database:/var/lib/postgresql
       - postgres_database_data:/var/lib/postgresql/data
