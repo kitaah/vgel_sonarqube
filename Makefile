@@ -59,4 +59,4 @@ sonar-scan: ## Run SonarScanner last version
 		-Dsonar.sourceEncoding=utf-8 \
 		-Dsonar.host.url=http://localhost:9000 \
 		-Dsonar.login=sqp_a7e04af8e31483801502c77884e452a4ff1ce260 \
-		-Dsonar.exclusions=vgel/node_modules/**,vgel/public/bootstrap/**/*.css,vgel/public/css/**/*.css,vgel/public/css/**/*.less
+		-Dsonar.exclusions=vgel/node_modules/**,vgel/vendor/**,vgel/public/bootstrap/**/*.css,vgel/public/css/**/*.css,vgel/public/css/**/*.less
