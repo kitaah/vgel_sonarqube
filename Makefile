@@ -1,3 +1,4 @@
+# you need to use make
 .PHONY: ps build up start fresh stop restart down destroy
 
 CONTAINER_SONAR=sonarqube
