@@ -1,5 +1,5 @@
 # you need to use make
-.PHONY: ps build up start fresh stop restart down destroy
+.PHONY: ps build rebuild up start fresh stop restart down destroy
 
 CONTAINER_SONAR=sonarqube
 CONTAINER_DATABASE=db_postgres-database
@@ -15,6 +15,8 @@ ps: ## Show containers
 	@docker-compose ps
 build: ## Build all containers
 	@docker-compose-build
+rebuild: ## run the rebuild.sh file
+	@./rebuild.sh
 up: ##  Builds, (re)creates, and starts containers
 	@docker-compose up
 start: ## Start all containers
