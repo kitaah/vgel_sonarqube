@@ -2,8 +2,8 @@
 ## run the script: ./rebuild.sh
 
 ## Stop and remove all containers
-docker-compose down
+docker compose down
 ## Build all containers
-docker-compose build
+docker compose build
 ##  Builds, (re)creates, and starts containers
-docker-compose -f docker-compose.yml up -d
+docker compose -f docker compose.yml up -d
